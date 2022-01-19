@@ -1,0 +1,125 @@
+.parent{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.item{
+    background-color:gainsboro;
+    padding: 20px;
+    font-size: 0.77rem;
+    line-height: 1.7;
+
+}
+.item:nth-child(1){
+    font-size: 1.1rem;
+    grid-row: span 2;
+    display: grid;
+    align-content: center;
+}
+.item p{
+    margin: 0;
+}
+.examplebanner{
+    max-width: 900px;
+    height: 300px;
+    background-color: mediumslateblue;
+    margin: 0 auto 20px auto;
+    display: grid;
+    
+}
+.center-me{
+    font-size: 3rem;
+    color: black;
+    margin: auto;
+}
+.fullwidthexample{
+    display: grid;
+    grid-template-columns: minmax(auto,900px);
+    background-color: grey;
+    line-height: 1.7;
+    padding: 20px;
+    justify-content: center;
+}
+.photoexample{
+    display: grid;
+    max-width: 700px;
+    margin: 20px auto;
+
+}
+.photoexample img{
+    max-width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+}
+.overlaytext{
+    color: whitesmoke;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    align-self: end;
+   
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "sidebar footer";
+}
+.header{
+    background-color: grey;
+    padding: 20px;
+    grid-area: header;
+}
+.sidebar{
+    background-color: royalblue;
+    font-size: 0.8rem;
+    grid-area: sidebar;
+    padding: 20px;
+}
+.main{
+    background-color: white;
+    grid-area: main;
+    padding: 20px;
+    line-height: 1.7;
+}
+.footer{
+    background-color: black;
+    font-size: 0.4rem;
+    color: whitesmoke;
+    grid-area: footer;
+    padding: 15px;
+    align-self: end;
+}
+.responsive{
+    background-color: sandybrown;
+    display: grid;
+    max-width: 1100px;
+    padding: 10px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); 
+    gap: 20px;
+}
+.items{
+    background-color: silver;
+    padding: 20px;
+    font-size: 0.77rem;
+    line-height: 1.7;
+    overflow: auto;
+
+}
+.artbanner{
+    background-color: white;
+    height: 100vh;
+
+}
+.art{
+    opacity: 0.1;
+    background-image: url(media/jeff.JPG) center center no-repeat;
+    background-size: cover;
+}
